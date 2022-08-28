@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="shortcut icon" src="" type="image/ico">
+        <title>HOME PAGE</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+
+        <!-- BARRA DE NAVEGAÇÃO-->
+        <div class="container-fluid">
+                  <li><a id="len1" class="hoverable" href="index.html">Página Inicial</a></li>
+                  <li><a id="len2" class="hoverable" href="Projetos.html">Projetos</a></li>
+                  <li><a id="len3" class="hoverable" href="Contato.html">Contato</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        <!-- FIM DA BARRA DE NAVEGAÇÃO-->
+
+        <h1>Bruno HSM, Desenvolvedor Java Jr.</h1>
+        <img class="profile" src="image/profile.jfif" alt="" class="img-fluid" alt="Responsive image">
+
+        <div>
+            <span class="txt anim-text-flow">Olá, meu nome é Bruno Henrique, tenho 24 anos,<p>recentemente conclui o curso de Ciência da Computação pela Universidade Nove de Julho(UNINOVE).<p>
+            Estou em busca do meu primeiro emprego na área da tecnologia, atuando com o desenvolvimento.<p>
+            Tenho foco no desenvolvimento web, utilizando a linguagem de programação JAVA.
+            </span>
+          </div>
+          <footer id="rod">
+          <a target="blank" id="download" href="Curriculo Bruno-1.pdf">Baixe aqui meu Curriculo!</a>
+          </footer>
+    <script>
+       
+    </script>
+
+    <style>
+
+    body {
+            background-color: #1a1a1a;
+            color: #fefefe;
+            font-family: 'Ubuntu';
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 1.3em;
+            line-height: 2;
+            text-align: center;
+    }
+
+        #line{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .profile{
+        
+            height: 400px;
+            width: 300px;
+            border-radius:200px;
+        }
+
+.txt {
+  display: block;
+}
+
+a { 
+  color: lightblue;
+  font-size: 15px;
+
+}
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+
+  transition-duration: .3s;
+ 
+}
+.hoverable:before{
+
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  opacity:0;
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 1s;
+}
+
+li{
+    list-style:none;
+}
+
+#rod{
+
+  margin-top: 90px;
+
+}
+  </style>
+    </body>
+</html>
